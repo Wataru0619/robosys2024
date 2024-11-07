@@ -2,8 +2,9 @@
 # SPDX-FileCopyrightText: 2024 Wataru Suenaga
 # SPDX-License-Identifier: BSD-3-Clause
 import sys
-　   #スライドの関係で1行だけど、本来、関数の前後は2行空白をあける
-def tonum(s):   #def 関数の名前(引数)で関数を定義
+
+
+def tonum(s):
     try:
         return int(s)
     except:
