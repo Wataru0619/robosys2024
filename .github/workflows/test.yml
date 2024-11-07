@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Set execute permissions
+      run: chmod +x ./test.bash ./plus
     - name: All test
       run: bash -xv ./test.bash
+
 
