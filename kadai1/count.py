@@ -12,6 +12,6 @@ c = Counter(text)
 
 print("Character counts:")
 
-for char, count in c.items():
-    print(f"'{char}': {count}")
+for character, count in c.items():
+    print(f"'{character}': {count}")
 
