@@ -2,7 +2,7 @@
 
 
 ng () {
-    echo "${1}行目が違うよ"
+    echo "error"
     res=1
 }
 
@@ -13,7 +13,7 @@ output=$(echo "" | python3 count.py)
 output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e 's/^[ \t]*//;s/[ \t]*$//' -e '/^$/d')
 expected="No input"
 if [ "$output_cleaned" != "$expected" ]; then
-    ng "$LINENO"
+    ng 
 else
     echo "Test1 Passed"
 fi
@@ -23,19 +23,29 @@ output=$(echo "a" | python3 count.py)
 output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e 's/^[ \t]*//;s/[ \t]*$//' -e '/^$/d')
 expected="Counter({'a': 1})"
 if [ "$output_cleaned" != "$expected" ]; then
-    ng "$LINENO"
+    ng 
 else
     echo "Test2 Passed"
 fi
 
 #Test3
-output=$(echo "abbccc" | python3 count.py)
+output=$(echo "aaa" | python3 count.py)
 output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e 's/^[ \t]*//;s/[ \t]*$//' -e '/^$/d')
-expected="Counter({'c': 3, 'b': 2, 'a': 1})"
+expected="Counter({'a': 3})"
 if [ "$output_cleaned" != "$expected" ]; then
-    ng "$LINENO"
+    ng 
 else
     echo "Test3 Passed"
+fi
+
+#Test4
+output=$(echo "hello world" | python3 count.py)
+output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e 's/^[ \t]*//;s/[ \t]*$//' -e '/^$/d')
+expected="Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})"
+if [ "$output_cleaned" != "$expected" ]; then
+    ng 
+else
+    echo "Test4 Passed"
 fi
 
 exit $res
