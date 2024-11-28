@@ -1,6 +1,6 @@
 from collections import Counter
 
-test = input()
+text = input()
 
 c = Counter(text)
 
