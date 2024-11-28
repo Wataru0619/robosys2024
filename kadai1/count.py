@@ -1,8 +1,8 @@
 from collections import Counter
 
-test = imput()
+test = input()
 
-c = Counter('text')
+c = Counter(text)
 
 print(c)
 
