@@ -1,12 +1,38 @@
-name test
-on: push
+name: Test Workflow
+
+on:
+  push:
+    branches:
+      - main  # pushの対象ブランチを指定
+
 jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.7", "3.8", "3.9", "3.10",]
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
     steps:
-    - uses: actions/checkout@v3
-    - name: All test
-      run: bash -xv ./testcount.bash
+      - name: Checkout code
+        uses: actions/checkout@v3  # リポジトリのコードをチェックアウト
+
+      - name: Set up Python
+        uses: actions/setup-python@v2  # Pythonのセットアップ
+        with:
+          python-version: ${{ matrix.python-version }}  # マトリックスで指定されたPythonバージョンを使用
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip  # pipを最新にアップグレード
+          pip install -r requirements.txt  # 必要な依存関係をインストール
+
+      - name: Run tests
+        run: |
+          bash -xv ./testcount.bash  # bashスクリプトをデバッグモードで実行
+
+      - name: Check for errors
+        run: |
+          if [[ $? -ne 0 ]]; then  # エラーチェック
+            echo "Test failed!"  # テストが失敗した場合
+            exit 1
+          fi
+
