@@ -14,3 +14,6 @@ if not text:
 c = Counter(text)
 
 print(c)
+
+- このソフトウェアパッケージは，GPL3.0ライセンスの下，再頒布および使用が許可されます．
+- © 2024:Wataru Suenaga
