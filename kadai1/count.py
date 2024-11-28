@@ -1,7 +1,7 @@
 from collections import Counter
 
 print("Please enter text")
-text = input()
+text = input().strip()
 
 if not text:
     print("No input")
