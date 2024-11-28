@@ -5,7 +5,7 @@ print("Please enter text")
 text = input()
 
 if not text:
-    print("No imput")
+    print("No input")
     exit()
 
 c = Counter(text)
@@ -13,5 +13,5 @@ c = Counter(text)
 print("Character counts:")
 
 for character, count in c.items():
-    print(f"{repr(Character)}: {count}")
+    print(f"{repr(character)}: {count}")
 
