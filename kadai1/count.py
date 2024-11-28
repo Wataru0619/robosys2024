@@ -1,6 +1,8 @@
 from collections import Counter
 
-c = Counter('abbccc')
+test = imput()
+
+c = Counter('text')
 
 print(c)
 
