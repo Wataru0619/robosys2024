@@ -9,9 +9,7 @@ jobs:
       matrix:
         python-version: ["3.7", "3.8", "3.9", "3.10"]
     steps:
-      - uses: actions/checkout@v3  # リポジトリのコードをチェックアウト
-      - name: List files in repository
-        run: ls -l  # リポジトリ内のファイルを確認
-      - name: Run testcount.bash
-        run: bash -xv ./testcount.bash  # testcount.bashを実行
+      - uses: actions/checkout@v3  
+      - name: All test
+        run: bash -xv ./testcount.bash  
 
