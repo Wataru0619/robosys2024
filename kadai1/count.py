@@ -15,5 +15,5 @@ c = Counter(text)
 
 print(c)
 
-- このソフトウェアパッケージは，GPL3.0ライセンスの下，再頒布および使用が許可されます．
-- © 2024:Wataru Suenaga
+# This software package is licensed under the GPL-3.0 License, and redistribution and usage are permitted under its terms.
+# © 2024:Wataru Suenaga
