@@ -9,7 +9,4 @@ if not text:
 
 c = Counter(text)
 
-print("Character counts:")
-for character, count in c.items():
-    print(f"'{character}': {count}")
-
+print(c)
