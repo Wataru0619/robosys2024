@@ -19,5 +19,14 @@ else
     echo "Test1 Passed"
 fi
 
+#Test2
+output=$(echo "a" | python3 ./kadai1/count.py)
+output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')expected="Counter({'a': 1})"
+if [ "$output_cleaned" != "$expected" ]; then
+    ng
+else
+    echo "Test2 Passed"
+fi
+
 exit $res
 
