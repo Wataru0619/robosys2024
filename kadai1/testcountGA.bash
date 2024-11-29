@@ -2,7 +2,6 @@
 # SPDX-FileCopyrightText: 2024 Wataru Suenaga
 # SPDX-License-Identifier: GPL-3.0-only
 
-
 ng () {
     echo "error"
     res=1
@@ -10,9 +9,10 @@ ng () {
 
 res=0
 
-#Test1
+# Test1
 output=$(echo "" | python3 ./kadai1/count.py)
-output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')expected="No input"
+output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')
+expected="No input"
 if [ "$output_cleaned" != "$expected" ]; then
     ng
 else
