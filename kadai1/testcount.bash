@@ -11,17 +11,17 @@ ng () {
 res=0
 
 #Test1
-output=$(python3 ./count)
-expected="Usage: ./count 'text'"
-if [[ "$output" != *"$expected"* ]]; then
+output=$(echo "" | ./count)
+expected="No input"
+if [ "$output" != "$expected" ]; then
     ng
 else
     echo "Test1 Passed"
 fi
 
 #Test2
-output=$(python3 ./count "")
-expected="No input"
+output=$(echo "a" | ./count)
+expected="Counter({'a': 1})"
 if [ "$output" != "$expected" ]; then
     ng
 else
@@ -29,8 +29,8 @@ else
 fi
 
 #Test3
-output=$(python3 ./count "a")
-expected="Counter({'a': 1})"
+output=$(echo "aaa" | ./count)
+expected="Counter({'a': 3})"
 if [ "$output" != "$expected" ]; then
     ng
 else
@@ -38,8 +38,8 @@ else
 fi
 
 #Test4
-output=$(python3 ./count "aaa")
-expected="Counter({'a': 3})"
+output=$(echo "hello world" | ./count)
+expected="Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})"
 if [ "$output" != "$expected" ]; then
     ng
 else
@@ -47,21 +47,12 @@ else
 fi
 
 #Test5
-output=$(python3 ./count "hello world")
-expected="Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})"
-if [ "$output" != "$expected" ]; then
-    ng
-else
-    echo "Test5 Passed"
-fi
-
-#Test6
-output=$(python3 ./count "!@#$%^&*()")
+output=$(echo "!@#$%^&*()" | ./count)
 expected="Counter({'!': 1, '@': 1, '#': 1, '$': 1, '%': 1, '^': 1, '&': 1, '*': 1, '(': 1, ')': 1})"
 if [ "$output" != "$expected" ]; then
     ng
 else
-    echo "Test6 Passed"
+    echo "Test5 Passed"
 fi
 
 exit $res

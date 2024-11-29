@@ -5,13 +5,9 @@
 from collections import Counter
 import sys
 
-if len(sys.argv) < 2:
-    print("Usage: ./count 'text'")
-    exit()
+text = sys.stdin.read().strip()
 
-text = sys.argv[1]
-
-if not text.strip():
+if not text:
     print("No input")
     exit()
 
