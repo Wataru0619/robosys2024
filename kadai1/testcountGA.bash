@@ -10,7 +10,7 @@ ng () {
 res=0
 
 # Test1
-output=$(echo "" | python3 ./kadai1/count)
+output=$(echo "" |./kadai1/count)
 expected="No input"  
 if [ "$output" != "$expected" ]; then
     ng
@@ -20,9 +20,8 @@ fi
 
 # Test2
 output=$(echo "a" | python3 ./kadai1/count)
-output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')
 expected="Counter({'a': 1})"  
-if [ "$output_cleaned" != "$expected" ]; then
+if [ "$output" != "$expected" ]; then
     ng
 else
     echo "Test2 Passed"
