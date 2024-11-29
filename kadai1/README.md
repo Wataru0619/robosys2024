@@ -7,7 +7,7 @@ count.py
 - 使用方法  
 1.リポジトリをダウンロードします。  
 git clone https://github.com/Wataru0619/robosys2024.git  
-cd robosys2024  
+cd robosys2024/kadai1  
 2.必要に応じて実行権限を付与します。  
 chmod +x count.py  
 3.ターミナルから以下のコマンドを実行します。  
