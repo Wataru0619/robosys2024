@@ -1,27 +1,27 @@
 count.py
 
 
-- 概要
+- 概要  
 このプログラムは、入力されたテキスト内の各文字の出現回数を数え、その結果を出力するpythonスクリプトです。
 
-- 使用方法
-1.リポジトリをダウンロードします。
-git clone https://github.com/Wataru0619/robosys2024.git
-cd robosys2024
-2.必要に応じて実行権限を付与します。
-chmod +x count.py
-3.ターミナルから以下のコマンドを実行します。
-./count.py
+- 使用方法  
+1.リポジトリをダウンロードします。  
+git clone https://github.com/Wataru0619/robosys2024.git  
+cd robosys2024  
+2.必要に応じて実行権限を付与します。  
+chmod +x count.py  
+3.ターミナルから以下のコマンドを実行します。  
+./count.py  
 4.プロンプトに従ってテキストを入力すると、文字ごとのカウント結果が表示されます。
 
-- 動作環境
-・OS:Linux,macOS,Windows
-・Python:Python 3.8.10
+- 動作環境  
+・OS:Linux,macOS,Windows  
+・Python:Python 3.8.10  
 ・依存ライブラリ：標準ライブラリのみ
 
-- テスト
-1.ターミナルから以下のコマンドを実行します。
-./testcount.bash
+- テスト  
+1.ターミナルから以下のコマンドを実行します。  
+./testcount.bash  
 2.テストにパスすると成功メッセージが表示されます。
 
 
