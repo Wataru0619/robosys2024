@@ -10,7 +10,7 @@ ng () {
 res=0
 
 # Test1
-output=$(echo "" | python3 ./kadai1/count.py)
+output=$(echo "" | python3 ./kadai1/count)
 output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')
 expected="No input"  
 if [ "$output_cleaned" != "$expected" ]; then
@@ -20,7 +20,7 @@ else
 fi
 
 # Test2
-output=$(echo "a" | python3 ./kadai1/count.py)
+output=$(echo "a" | python3 ./kadai1/count)
 output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')
 expected="Counter({'a': 1})"  
 if [ "$output_cleaned" != "$expected" ]; then
@@ -30,7 +30,7 @@ else
 fi
 
 # Test3
-output=$(echo "aaa" | python3 ./kadai1/count.py)
+output=$(echo "aaa" | python3 ./kadai1/count)
 output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')
 expected="Counter({'a': 3})"
 if [ "$output_cleaned" != "$expected" ]; then
@@ -40,7 +40,7 @@ else
 fi
 
 # Test4
-output=$(echo "hello world" | python3 ./kadai1/count.py)
+output=$(echo "hello world" | python3 ./kadai1/count)
 output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')
 expected="Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})"
 if [ "$output_cleaned" != "$expected" ]; then
@@ -50,7 +50,7 @@ else
 fi
 
 # Test5
-output=$(echo "!@#$%^&*()" | python3 ./kadai1/count.py)
+output=$(echo "!@#$%^&*()" | python3 ./kadai1/count)
 output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')
 expected="Counter({'!': 1, '@': 1, '#': 1, '$': 1, '%': 1, '^': 1, '&': 1, '*': 1, '(': 1, ')': 1})"
 if [ "$output_cleaned" != "$expected" ]; then
