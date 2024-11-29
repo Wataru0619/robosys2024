@@ -1,4 +1,4 @@
-#count
+count
 
 ![test](https://github.com/Wataruo619/robosys2024/actions/workflows/test.yml/badge.svg)
 
