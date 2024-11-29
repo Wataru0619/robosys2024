@@ -11,21 +11,19 @@ ng () {
 res=0
 
 #Test1
-output=$(echo "" | python3 ./count)
-output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')
-expected="No input"
-if [ "$output_cleaned" != "$expected" ]; then
-    ng 
+output=$(python3 ./count)
+expected="Usage: ./count 'text'"
+if [[ "$output" != *"$expected"* ]]; then
+    ng
 else
     echo "Test1 Passed"
 fi
 
 #Test2
-output=$(echo "a" | python3 ./count)
-output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')
-expected="Counter({'a': 1})"
-if [ "$output_cleaned" != "$expected" ]; then
-    ng 
+output=$(python3 ./count "")
+expected="No input"
+if [ "$output" != "$expected" ]; then
+    ng
 else
     echo "Test2 Passed"
 fi

@@ -3,11 +3,15 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 from collections import Counter
+import sys
 
-print("Please enter text")
-text = input().strip()
+if len(sys.argv) < 2:
+    print("Usage: ./count 'text'")
+    exit()
 
-if not text:
+text = sys.argv[1]
+
+if not text.strip():
     print("No input")
     exit()
 
