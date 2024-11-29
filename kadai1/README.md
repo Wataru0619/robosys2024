@@ -16,7 +16,7 @@ chmod +x count.py
 
 - 動作環境
 ・OS:Linux,macOS,Windows
-・Python:
+・Python:Python 3.8.10
 ・依存ライブラリ：標準ライブラリのみ
 
 - テスト
