@@ -49,5 +49,15 @@ else
     echo "Test4 Passed"
 fi
 
+# Test5
+output=$(echo "!@#$%^&*()" | python3 ./kadai1/count.py)
+output_cleaned=$(echo "$output" | sed -e 's/Please enter text//' -e '/^$/d')
+expected="Counter({'!': 1, '@': 1, '#': 1, '$': 1, '%': 1, '^': 1, '&': 1, '*': 1, '(': 1, ')': 1})"
+if [ "$output_cleaned" != "$expected" ]; then
+    ng
+else
+    echo "Test5 Passed"
+fi
+
 exit $res
 
