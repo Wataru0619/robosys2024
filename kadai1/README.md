@@ -1,4 +1,4 @@
-count.py
+#count
 
 ![test](https://github.com/Wataruo619/robosys2024/actions/workflows/test.yml/badge.svg)
 
@@ -10,9 +10,9 @@ count.py
 git clone https://github.com/Wataru0619/robosys2024.git  
 cd robosys2024/kadai1  
 2.必要に応じて実行権限を付与します。  
-chmod +x count.py  
+chmod +x count  
 3.ターミナルから以下のコマンドを実行します。  
-./count.py  
+./count  
 4.プロンプトに従ってテキストを入力すると、文字ごとのカウント結果が表示されます。
 
 - 動作環境  
