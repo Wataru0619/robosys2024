@@ -1,5 +1,6 @@
 count.py
 
+![test](https://github.com/Wataruo619/robosys2024/actions/workflows/test.yml/badge.svg)
 
 - 概要  
 このプログラムは、入力されたテキスト内の各文字の出現回数を数え、その結果を出力するpythonスクリプトです。
