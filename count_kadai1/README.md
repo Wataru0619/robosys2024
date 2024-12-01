@@ -28,9 +28,8 @@ chmod +x count
 
 
 # 動作環境  
-- OS:Linux,macOS,Windows  
-- Python:Python 3.7 ~ 3.10    
-- 依存ライブラリ：標準ライブラリのみ
+- OS:Linux  
+- Python:3.7~3.10
 
 # テスト  
 1.ターミナルから以下のコマンドを実行します。  
