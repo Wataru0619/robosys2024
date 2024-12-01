@@ -4,26 +4,28 @@
 - COPYING  
 ライセンスに関する文章
 - README.md  
-この文章
+この説明書
 - count  
 入力されたテキスト内の各文字の出現回数を数え、その結果を出力するプログラム
 - testcount.bash  
 countのテストプログラム
 - testcount.bash  
-githubactions用のcountのテストプログラム
+Github Actions用のcountのテストプログラム
 
-![test](https://github.com/Wataruo619/robosys2024/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/Wataruo619/robosys2024/actions/workflows/test.yml/badge.svg)  
+GithubActionsによるテスト結果バッジ
 
 # 使用方法
 - count  
-1.リポジトリをダウンロードします。  
+1.リポジトリをクローンし、プログラムがあるディレクトリに移動します。  
 git clone https://github.com/Wataru0619/robosys2024.git  
 cd robosys2024/count_kadai1  
 2.必要に応じて実行権限を付与します。  
 chmod +x count  
-3.ターミナルから以下のコマンドを実行します。  
+3.以下のコマンドを実行し、プログラムを起動します。  
 ./count  
-4.プログラムは標準入力を待機します。テキストを入力後CTRL+Dで各文字の出現回数がカウントされ、出力されます。
+4.プログラムは標準入力を待機します。テキストを入力後CTRL+Dを押して終了してください。各文字の出現回数がカウントされ、出力されます。　　
+
 
 # 動作環境  
 - OS:Linux,macOS,Windows  
@@ -33,7 +35,7 @@ chmod +x count
 # テスト  
 1.ターミナルから以下のコマンドを実行します。  
 ./testcount.bash  
-2.テストにパスすると成功メッセージが表示されます。
+2.テストにパスした場合、成功メッセージが表示されます。
 
 
 - このソフトウェアパッケージは，GPL3.0ライセンスの下，再頒布および使用が許可されます．
