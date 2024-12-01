@@ -12,7 +12,7 @@ countのテストプログラム
 - testcount.bash  
 Github Actions用のcountのテストプログラム
 
-![test](https://github.com/Wataru0619/actions/workflows/test.yml/badge.svg)  
+![test](https://github.com/Wataru0619/robosys2024/actions/workflows/test.yml/badge.svg)  
 GithubActionsによるテスト結果バッジ
 
 # 使用方法
