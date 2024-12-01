@@ -12,7 +12,7 @@ countのテストプログラム
 - testcount.bash  
 Github Actions用のcountのテストプログラム
 
-![test](https://github.com/Wataruo619/robosys2024/actions/workflows/test.yml/badge.svg)  
+![test](https://github.com/Wataru0619/actions/workflows/test.yml/badge.svg)  
 GithubActionsによるテスト結果バッジ
 
 # 使用方法
@@ -31,12 +31,7 @@ chmod +x count
 - OS:Linux  
 - Python:3.7~3.10
 
-# テスト  
-1.ターミナルから以下のコマンドを実行します。  
-./testcount.bash  
-2.テストにパスした場合、成功メッセージが表示されます。
-
-
+# ライセンス
 - このソフトウェアパッケージは，GPL3.0ライセンスの下，再頒布および使用が許可されます．
 - © 2024 Wataru Suenaga 
 
