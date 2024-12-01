@@ -16,7 +16,6 @@ githubactions用のcountのテストプログラム
 
 # 使用方法
 - count  
-  
 1.リポジトリをダウンロードします。  
 git clone https://github.com/Wataru0619/robosys2024.git  
 cd robosys2024/count_kadai1  
