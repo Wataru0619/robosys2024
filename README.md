@@ -1,15 +1,17 @@
-# robosys2024/count_kadai1
+# robosys2024
 
 # 内容
-- COPYING
+- .github/workflows  
+
+- COPYING  
 ライセンスに関する文章
-- README.md
+- README.md  
 この説明書
-- count
+- count  
 入力されたテキスト内の各文字の出現回数を数え、その結果を出力するプログラム
-- testcount.bash
+- testcount.bash  
 countのテストプログラム
-- testcount.bash
+- testcount.bash  
 Github Actions用のcountのテストプログラム
 
 ![test](https://github.com/Wataru0619/robosys2024/actions/workflows/test.yml/badge.svg)
