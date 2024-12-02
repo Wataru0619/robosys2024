@@ -19,9 +19,11 @@ GithubActionsによるテスト結果バッジ
 
 # 使用方法
 - count
-1.リポジトリをクローンし、プログラムがあるディレクトリに移動します。  
+1.リポジトリをクローンし、プログラムがあるディレクトリに移動します。 
+,,, 
 git clone https://github.com/Wataru0619/robosys2024.git  
 cd robosys2024/count_kadai1  
+,,,
 2.必要に応じて実行権限を付与します。  
 chmod +x count  
 3.以下のコマンドを実行し、プログラムを起動します。  
