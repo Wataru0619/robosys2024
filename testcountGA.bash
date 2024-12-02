@@ -10,7 +10,7 @@ ng () {
 res=0
 
 # Test1
-output=$(echo "" |./count_kadai1/count)
+output=$(echo "" |./count)
 expected="No input"  
 if [ "$output" != "$expected" ]; then
     ng
@@ -19,7 +19,7 @@ else
 fi
 
 # Test2
-output=$(echo "a" |./count_kadai1/count)
+output=$(echo "a" |./count)
 expected="Counter({'a': 1})"  
 if [ "$output" != "$expected" ]; then
     ng
@@ -28,7 +28,7 @@ else
 fi
 
 # Test3
-output=$(echo "aaa" |./count_kadai1/count)
+output=$(echo "aaa" |./count)
 expected="Counter({'a': 3})"
 if [ "$output" != "$expected" ]; then
     ng
@@ -37,7 +37,7 @@ else
 fi
 
 # Test4
-output=$(echo "hello world" |./count_kadai1/count)
+output=$(echo "hello world" |./count)
 expected="Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})"
 if [ "$output" != "$expected" ]; then
     ng
@@ -46,7 +46,7 @@ else
 fi
 
 # Test5
-output=$(echo "!@#$%^&*()" |./count_kadai1/count)
+output=$(echo "!@#$%^&*()" |./count)
 expected="Counter({'!': 1, '@': 1, '#': 1, '$': 1, '%': 1, '^': 1, '&': 1, '*': 1, '(': 1, ')': 1})"
 if [ "$output" != "$expected" ]; then
     ng
