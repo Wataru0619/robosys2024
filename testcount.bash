@@ -83,7 +83,6 @@ else
 fi
 
 #Test9
-output=$(echo "#Test8
 output=$(echo "😀😃😄😁😆" | ./count)
 expected="Counter({'😀': 1, '😃': 1, '😄': 1, '😁': 1, '😆': 1})"
 if [ "$output" != "$expected" ]; then
