@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3  
       - name: All test
-        run: bash -xv ./testcountGA.bash  
+        run: bash -xv ./testcount.bash  
 
