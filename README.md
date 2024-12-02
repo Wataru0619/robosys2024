@@ -16,7 +16,7 @@ countのテストプログラム
 GithubActionsによるテスト結果バッジ
 
 # 使用方法
-- count
+- count  
 1.リポジトリをクローンし、プログラムがあるディレクトリに移動します。 
 ``` 
 git clone https://github.com/Wataru0619/robosys2024.git  
