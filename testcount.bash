@@ -55,6 +55,15 @@ else
     echo "Test5 Passed"
 fi
 
+#Test6
+output=$(echo "1234567890" | ./count)
+expected="Counter({'1': 1, '2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, '0': 1})"
+if [ "$output" != "$expected" ]; then
+    ng
+else
+    echo "Test6 Passed"
+fi
+
 exit $res
 
 
