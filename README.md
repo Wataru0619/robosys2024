@@ -11,8 +11,6 @@ GithubActions用のプログラム
 入力されたテキスト内の各文字の出現回数を数え、その結果を出力するプログラム
 - testcount.bash  
 countのテストプログラム
-- testcount.bash  
-Github Actions用のcountのテストプログラム
 
 ![test](https://github.com/Wataru0619/robosys2024/actions/workflows/test.yml/badge.svg)
 GithubActionsによるテスト結果バッジ
