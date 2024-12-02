@@ -2,7 +2,7 @@
 
 # 内容
 - .github/workflows  
-
+GithubActions用のプログラム
 - COPYING  
 ライセンスに関する文章
 - README.md  
