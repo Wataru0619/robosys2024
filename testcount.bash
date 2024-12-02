@@ -64,6 +64,34 @@ else
     echo "Test6 Passed"
 fi
 
+#Test7
+output=$(echo "なまむぎなまごめなまたまご" | ./count)
+expected="Counter({'ま': 4, 'な': 3, 'ご': 2, 'む': 1, 'ぎ': 1, 'め': 1, 'た': 1})"
+if [ "$output" != "$expected" ]; then
+    ng
+else
+    echo "Test7 Passed"
+fi
+
+#Test8
+output=$(echo "生麦生米生卵" | ./count)
+expected="Counter({'生': 3, '麦': 1, '米': 1, '卵': 1})"
+if [ "$output" != "$expected" ]; then
+    ng
+else
+    echo "Test8 Passed"
+fi
+
+#Test9
+output=$(echo "#Test8
+output=$(echo "😀😃😄😁😆" | ./count)
+expected="Counter({'😀': 1, '😃': 1, '😄': 1, '😁': 1, '😆': 1})"
+if [ "$output" != "$expected" ]; then
+    ng
+else
+    echo "Test9 Passed"
+fi
+
 exit $res
 
 
