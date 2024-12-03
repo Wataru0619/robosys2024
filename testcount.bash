@@ -11,7 +11,7 @@ ng () {
 res=0
 
 #Test1
-output=$(echo "" | ./count)
+output=$(echo "" | ./count 2>&1)
 expected="No input"
 if [ "$output" != "$expected" ]; then
     ng
