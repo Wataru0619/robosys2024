@@ -67,8 +67,8 @@ echo "hello world" | ./count | grep "l"
 l: 3
 ```
 # 動作環境
-- OS:Linux
-- Python:3.7~3.10
+- OS: Linux
+- Python: 3.7~3.10
 
 # テスト環境
 - Ubuntu 20.04  
