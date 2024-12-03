@@ -37,7 +37,7 @@ echo "カウントしたい文章" | ./count
 4.各文字の出現回数がカウントされ、出力されます。　　
 
 # 実行例 
-- 入力  
+- 単体での活用    
 ``` 
 echo "hello world" | ./count  
 h: 1
@@ -49,6 +49,18 @@ w: 1
 r: 1
 d: 1
 ```  
+- sort
+```
+echo "hello world" | ./count | sort
+ : 1
+d: 1
+e: 1
+h: 1
+l: 3
+o: 2
+r: 1
+w: 1
+```
 # 動作環境
 - OS:Linux
 - Python:3.7~3.10
