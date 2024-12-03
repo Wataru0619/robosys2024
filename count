@@ -9,7 +9,7 @@ text = sys.stdin.read().strip()
 
 if not text:
     print("No input", file=sys.stderr)
-    exit()
+    exit(1)
 
 c = Counter(text)
 
