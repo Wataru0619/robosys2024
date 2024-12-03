@@ -21,7 +21,7 @@ GithubActionsによるテスト結果バッジ
 1.リポジトリをクローンし、プログラムがあるディレクトリに移動します。 
 ``` 
 git clone https://github.com/Wataru0619/robosys2024.git  
-cd robosys2024/count_kadai1  
+cd robosys2024  
 ```
 2.必要に応じて実行権限を付与します。  
 ```
