@@ -61,6 +61,11 @@ o: 2
 r: 1
 w: 1
 ```
+- grep
+```
+echo "hello world" | ./count | grep
+l: 3
+```
 # 動作環境
 - OS:Linux
 - Python:3.7~3.10
