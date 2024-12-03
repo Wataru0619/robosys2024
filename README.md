@@ -39,10 +39,7 @@ echo "カウントしたい文章" | ./count
 # 実行例 
 - 入力  
 ``` 
-echo "hello world" | ./count
-``` 
-- 出力  
-```  
+echo "hello world" | ./count  
 h: 1
 e: 1
 l: 3
