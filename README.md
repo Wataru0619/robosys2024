@@ -37,7 +37,7 @@ echo "カウントしたい文章" | ./count
 4.各文字の出現回数がカウントされ、出力されます。　　
 
 # 実行例 
-- 単体での活用    
+- 単体での活用  
 ``` 
 echo "hello world" | ./count  
 h: 1
@@ -49,7 +49,7 @@ w: 1
 r: 1
 d: 1
 ```  
-- sort
+- 辞書順にソート  
 ```
 echo "hello world" | ./count | sort
  : 1
@@ -61,9 +61,9 @@ o: 2
 r: 1
 w: 1
 ```
-- grep
+-指定した文字のみ出力  
 ```
-echo "hello world" | ./count | grep
+echo "hello world" | ./count | grep "l"
 l: 3
 ```
 # 動作環境
