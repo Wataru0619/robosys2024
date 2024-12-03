@@ -5,15 +5,19 @@
 from collections import Counter
 import sys
 
-text = sys.stdin.read().strip()
+def main():
+    text = sys.stdin.read().strip()
 
-if not text:
-    print("No input", file=sys.stderr)
-    exit(1)
+    if not text:
+        print("No input", file=sys.stderr)
+        exit(1)
 
-c = Counter(text)
+    c = Counter(text)
+    
+    for char, count in c.items():
+        print(f"{char}: {count}")
 
-print(c)
-
+if __name__ == "__main__":
+    main()
 # This software package is licensed under the GPL-3.0 License, and redistribution and usage are permitted under its terms.
 # © 2024:Wataru Suenaga
