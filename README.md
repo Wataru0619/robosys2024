@@ -61,7 +61,7 @@ o: 2
 r: 1
 w: 1
 ```
--指定した文字のみ出力  
+- 指定した文字のみ出力  
 ```
 echo "hello world" | ./count | grep "l"
 l: 3
