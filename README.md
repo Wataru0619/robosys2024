@@ -1,5 +1,8 @@
 # robosys2024
 
+# 概要
+
+
 # 内容
 - .github/workflows  
 GithubActions用のプログラム
@@ -22,26 +25,26 @@ GithubActionsによるテスト結果バッジ
 ``` 
 git clone https://github.com/Wataru0619/robosys2024.git  
 cd robosys2024  
-```
+``` 
 2.必要に応じて実行権限を付与します。  
-```
+``` 
 chmod +x count  
-```
+``` 
 3.ターミナルから以下のコマンドを実行。  
-```
+``` 
 echo "カウントしたい文章" | ./count  
-```
+``` 
 4.各文字の出現回数がカウントされ、出力されます。　　
 
 # 実行例 
 - 入力  
-```
+``` 
 echo "hello world" | ./count
-```
+``` 
 - 出力  
-```
+```  
 Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
-```
+```  
 # 動作環境
 - OS:Linux
 - Python:3.7~3.10
