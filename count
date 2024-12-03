@@ -8,7 +8,7 @@ import sys
 text = sys.stdin.read().strip()
 
 if not text:
-    print("No input")
+    print("No input", file=sys.stderr)
     exit()
 
 c = Counter(text)
