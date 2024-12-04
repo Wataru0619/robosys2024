@@ -23,23 +23,23 @@ GithubActionsによるテスト結果バッジ
 
 1.リポジトリをクローンし、プログラムがあるディレクトリに移動します。 
 ``` 
-git clone https://github.com/Wataru0619/robosys2024.git  
-cd robosys2024  
+$git clone https://github.com/Wataru0619/robosys2024.git  
+$cd robosys2024  
 ``` 
 2.必要に応じて実行権限を付与します。  
 ``` 
-chmod +x count  
+$chmod +x count  
 ``` 
 3.ターミナルから以下のコマンドを実行。  
 ``` 
-echo "カウントしたい文章" | ./count  
+$echo "カウントしたい文章" | ./count  
 ``` 
 4.各文字の出現回数がカウントされ、出力されます。　　
 
 # 実行例 
 - 単体での活用  
 ``` 
-echo "hello world" | ./count  
+$echo "hello world" | ./count  
 h: 1
 e: 1
 l: 3
@@ -51,7 +51,7 @@ d: 1
 ```  
 - 辞書順にソート  
 ```
-echo "hello world" | ./count | sort
+$echo "hello world" | ./count | sort
  : 1
 d: 1
 e: 1
@@ -63,7 +63,7 @@ w: 1
 ```
 - 指定した文字のみ出力  
 ```
-echo "hello world" | ./count | grep "l"
+$echo "hello world" | ./count | grep "l"
 l: 3
 ```
 # 動作環境
